@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/tab3"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{single_food[0]?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-card>
+  <ion-card-content>
+    <ion-img class="image" src="{{single_food[0]?.image}}"></ion-img>
+        </ion-card-content>
+
+  <ion-card-header>
+    <ion-card-subtitle>Crepes</ion-card-subtitle>
+    <ion-card-title>{{single_food[0]?.name}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    Ingredients: {{single_food[0]?.ingredients}}
+  </ion-card-content>
+  <ion-card-content>
+    Price: {{single_food[0]?.price}} €
+  </ion-card-content>
+</ion-card>

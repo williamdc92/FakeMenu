@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-title>
+        Pizza
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-item detail  [routerLink]="['/tabs/tab1/' + food.id]" *ngFor = "let food of pizza" click="takeID(food)">
+    <ion-label>
+      {{food.name}}
+    </ion-label>
+  </ion-item>
+  

@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Panini
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-item detail  [routerLink]="['/tabs/tab2/' + food.id]"  *ngFor = "let food of sandwiches">
+  <ion-label>
+    {{food.name}}
+  </ion-label>
+</ion-item>
+
